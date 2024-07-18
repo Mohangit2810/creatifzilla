@@ -9,9 +9,9 @@
     <title>CreatifZilla Task</title>
   </head>
   <body>
-    <header class="xl:pt-5 xl:px-5 xl:pb-2">
+    <header class="desktop-bar">
       <img src="images/Logo.png" alt="company logo" />
-      <nav>
+      <nav class="desktop-nav">
         <ul class="my-auto">
           <li><a href="#">Partners</a></li>
           <li><a href="#">How we work</a></li>
@@ -20,7 +20,46 @@
         </ul>
       </nav>
       <button class="nav-button">Join The Creator</button>
+      <svg
+        class="menu-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+        />
+      </svg>
     </header>
+    <aside class="sidebar">
+      <svg
+        class="sidebar-close-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-x-lg"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+        />
+      </svg>
+      <nav class="mobile-sidebar">
+        <img src="images/Logo.png" alt="company logo" />
+        <ul>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Review</a></li>
+          <li><a href="#">Charity</a></li>
+        </ul>
+        <button class="side-nav-button">Join The Creator</button>
+      </nav>
+    </aside>
 
     <section id="hero" class="hero-section">
       <img
@@ -44,7 +83,7 @@
         <h3 class="slogan">
           Spark your brand's
           <span class="imaginative">imaginative </span>
-          flair <br />
+          flair <br class="break" />
           with us
         </h3>
         <p class="hero-description">
@@ -83,7 +122,7 @@
     <section id="partners" class="partners-section">
       <img class="partner-line" src="images/partner-line.png" alt="line" />
       <h3 class="partners-title">
-        Contact us today to explore <br />
+        Contact us today to explore <br class="break" />
         partnership
         <span class="opportunities"
           >opportunities!
@@ -216,7 +255,11 @@
       <h3 class="how-we-work-title">
         Making it big on any Platform is tougher than you think
       </h3>
-      <img src="images/how-we-work.png" alt="how-we-work" />
+      <img
+        class="how-we-work-img"
+        src="images/how-we-work.png"
+        alt="how-we-work"
+      />
     </section>
     <script src="javascript/script.js"></script>
   </body>
