@@ -114,13 +114,11 @@ footer {
   cursor: pointer;
 }
 
-/* Hide sidebar by default */
 .sidebar {
-  right: -250px; /* Adjust this value to be off-screen */
+  right: -250px;
   transition: right 0.3s ease;
 }
 
-/* Show sidebar when active */
 .sidebar.active {
   right: 0;
 }
