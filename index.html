@@ -9,31 +9,70 @@
     <title>CreatifZilla Task</title>
   </head>
   <body>
-    <header class="desktop-bar">
-      <img src="images/Logo.png" alt="company logo" />
-      <nav class="desktop-nav">
-        <ul class="my-auto">
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">How we work</a></li>
-          <li><a href="#">Review</a></li>
-          <li><a href="#">Charity</a></li>
-        </ul>
-      </nav>
-      <button class="nav-button">Join The Creator</button>
-      <svg
-        class="menu-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-list"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-        />
-      </svg>
+    <header class="container-fluid py-3">
+      <div class="row align-items-center justify-content-center desktop-nav">
+        <div class="col-6 col-md-4 col-lg-3 custom-width">
+          <img src="images/Logo.png" alt="company logo" class="img-fluid" />
+        </div>
+        <nav class="col-md-6 d-none d-md-block">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link custom-color" href="#">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-color" href="#">How we work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-color" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-color" href="#">Charity</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="col-md-2 d-none d-md-block text-right">
+          <button class="nav-button">Join The Creator</button>
+        </div>
+        <div class="menu-btn col-6 d-md-none text-right">
+          <button
+            class="btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How we work</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Charity</a></li>
+          </ul>
+          <button class="nav-button mt-3">Join The Creator</button>
+        </div>
+      </div>
     </header>
     <aside class="sidebar">
       <svg
@@ -52,73 +91,93 @@
       <nav class="mobile-sidebar">
         <img src="images/Logo.png" alt="company logo" />
         <ul>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">How we work</a></li>
-          <li><a href="#">Review</a></li>
-          <li><a href="#">Charity</a></li>
+          <li><a href="#" class="custom-color">Partners</a></li>
+          <li><a href="#" class="custom-color">How we work</a></li>
+          <li><a href="#" class="custom-color">Review</a></li>
+          <li><a href="#" class="custom-color">Charity</a></li>
         </ul>
         <button class="side-nav-button">Join The Creator</button>
       </nav>
     </aside>
 
-    <section id="hero" class="hero-section">
-      <img
-        class="hero-decoration hero-hand-one"
-        src="images/hands_2.png"
-        alt="hands"
-      />
-      <img
-        class="hero-decoration hero-left-line"
-        src="images/LeftLine.png"
-        alt="line"
-      />
-      <img
-        class="hero-decoration hero-bulb-1"
-        src="images/bulb1.png"
-        alt="bulb"
-      />
-      <img class="hero-decoration hero-ig" src="images/insta.png" alt="ig" />
-      <img class="hero-decoration hero-fb" src="images/fb.png" alt="fg" />
-      <div class="hero-content">
-        <h3 class="slogan">
-          Spark your brand's
-          <span class="imaginative">imaginative </span>
-          flair <br class="break" />
-          with us
-        </h3>
-        <p class="hero-description">
-          Our team combines strategy, design, and technology to breathe life
-          into your brand. Collaborate with us to leave a lasting impression on
-          your audience.
-        </p>
-        <div class="input-wrapper">
-          <input
-            type="email"
-            name="email"
-            id="email-input"
-            placeholder="Enter you Email"
-          />
-          <button class="nav-button">Join</button>
+    <section id="hero" class="hero-section container-fluid position-relative">
+      <div class="row justify-content-center">
+        <img
+          class="hero-decoration hero-hand-one d-none d-lg-block"
+          src="images/hands_2.png"
+          alt="hands"
+        />
+        <img
+          class="hero-decoration hero-left-line d-none d-lg-block"
+          src="images/LeftLine.png"
+          alt="line"
+        />
+        <img
+          class="hero-decoration hero-bulb-1 d-none d-lg-block"
+          src="images/bulb1.png"
+          alt="bulb"
+        />
+        <img
+          class="hero-decoration hero-ig d-none d-lg-block"
+          src="images/insta.png"
+          alt="ig"
+        />
+        <img
+          class="hero-decoration hero-fb d-none d-lg-block"
+          src="images/fb.png"
+          alt="fb"
+        />
+        <div class="hero-content col-12 col-lg-10 text-center">
+          <h3 class="slogan">
+            Spark your brand's
+            <span class="imaginative">imaginative </span> flair
+            <br class="break d-none d-md-block" />
+            with us
+          </h3>
+          <p class="hero-description mx-auto">
+            Our team combines strategy, design, and technology to breathe life
+            into your brand. Collaborate with us to leave a lasting impression
+            on your audience.
+          </p>
+          <div class="input-wrapper mx-auto">
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              class="form-control"
+              placeholder="Enter your Email"
+            />
+            <button class="join-button btn">Join</button>
+          </div>
         </div>
+        <img
+          class="hero-decoration hero-hands-right d-none d-lg-block"
+          src="images/hands-right.png"
+          alt="hands"
+        />
+        <img
+          class="hero-decoration hero-bulb-2 d-none d-lg-block"
+          src="images/bulb1.png"
+          alt="bulb"
+        />
+        <img
+          class="hero-decoration hero-line-right d-none d-lg-block"
+          src="images/lineright.png"
+          alt="line"
+        />
+        <img
+          class="hero-decoration hero-yt d-none d-lg-block"
+          src="images/yt.png"
+          alt="yt"
+        />
+        <img
+          class="hero-decoration hero-right-fb d-none d-lg-block"
+          src="images/fb.png"
+          alt="fb"
+        />
       </div>
-      <img
-        class="hero-decoration hero-hands-right"
-        src="images/hands-right.png"
-        alt="hands"
-      />
-      <img
-        class="hero-decoration hero-bulb-2"
-        src="images/bulb1.png"
-        alt="bulb"
-      />
-      <img
-        class="hero-decoration hero-line-right"
-        src="images/lineright.png"
-        alt="line"
-      />
-      <img class="hero-decoration hero-yt" src="images/yt.png" alt="yt" />
-      <img class="hero-decoration hero-right-fb" src="images/fb.png" alt="fg" />
     </section>
+
     <section id="partners" class="partners-section">
       <img class="partner-line" src="images/partner-line.png" alt="line" />
       <h3 class="partners-title">
@@ -251,12 +310,23 @@
         </div>
       </div>
     </section>
-    <section id="how-we-work" class="how-we-work-section">
+
+    <!-- <section id="how-we-work" class="how-we-work-section">
       <h3 class="how-we-work-title">
         Making it big on any Platform is tougher than you think
       </h3>
       <img
         class="how-we-work-img"
+        src="images/how-we-work.png"
+        alt="how-we-work"
+      />
+    </section> -->
+    <section id="how-we-work" class="how-we-work-section container text-center">
+      <h3 class="how-we-work-title">
+        Making it big on any Platform is tougher than you think
+      </h3>
+      <img
+        class="how-we-work-img img-fluid"
         src="images/how-we-work.png"
         alt="how-we-work"
       />
